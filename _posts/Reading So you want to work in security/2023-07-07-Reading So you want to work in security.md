@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Cara ribet memperbarui forked repo
-date: 2020-01-29 01:00 +0700
-modified: 2020-03-07 16:49:47 +07:00
-description: Ada dua cara untuk memperbarui forked repository menggunakan web interface yang disediakan oleh github tapi ribet, atau melalui terminal yang lebih ribet lagi.
+title: Reading So you want to work in security
+date: 2023-07-07 16:04 +0700
+modified: 2023-07-07 18:10 +0700
+description: 对于http://ifsec.blogspot.com/2018/02/so-you-want-to-work-in-security-and-for.html的读后感
 tag:
   - tips
   - git
@@ -11,61 +11,8 @@ tag:
 image: /cara-memperbarui-fork-repository/repo.png
 ---
 
-Berawal dari saya pengen memperbarui repo yang tua dari suatu organisasi, niatnya pengen rumat ulang nih, ternyata dari orginal reponya ada update, sekalian buat artikel deh, lebih kurang gambaranya seperti ini.
+最初进入安全领域仅仅是因为高考志愿把我录取到了信息安全专业，当时对这个专业毫无了解，同样，也毫无兴趣可言。在经历了高中三年的高压的生活后，我进入了极度躺平的状态，所有课程都是仅过及格线，当时的人生规划是，及时行乐，随缘就好。
 
-<figure>
-<img src="{{ page.image }}" alt="ilustrasi repo yang mau diupdate">
-<figcaption>Fig 1. Gambaran ribetnya.</figcaption>
-</figure>
+回头来看，我到底是什么时候对信安产生了兴趣，并决心想在这个行业发展下去，我想，大概是因为我们讲信息安全数学基础的董老师在课堂上用两节课的时间不停的写数学证明的时候，也大概是因为我们线性代数蔡老师在大夏天挥汗如雨仍然写满黑板的板书的时候，也大概是阴差阳错进入了网安方班预备班看到师兄师姐拿奖拿到手软的时候，但究其根本的原因，也仅仅是因为我深处迷茫时，被我舍友一起拉着参加全国密码技术竞赛，由于不想拖她们的后腿，只能竭尽全力敲代码，研究算法，最终结果还很不错，获得了我人生中第一个全国性的奖项，从此，我便进入了热爱信安的状态，开始学习web安全，学习sql注入，xss攻击等等，拿下了第一个信息泄露edusrc,又拿下了第一个cvnd的sql高危注入。
 
-Ada dua cara untuk memperbarui forked repository menggunakan web interface yang disediakan oleh github tapi ribet, atau melalui terminal yang lebih ribet lagi.
-
-### Melalui Github (boring way) 💻
-
-1. Buka repo yang hasil fork di Github.
-1. Klik **Pull Requests** di sebelah kanan, lalu **New Pull Request**.
-1. Akan memunculkan hasil compare antara repo upstream dengan repo kamu(forked repo), dan jika menyatakan "There isn’t anything to compare.", tekan link **switching the base**, yang mana sekarang repo kamu(forked repo) akan dibalik menjadi base repo dan repo upstream menjadi head repo.
-1. Tekan **Create Pull Request**, beri judul pull request, Tekan **Send Pull Request**.
-1. Tekan **Merge Pull Request** dan **Confirm Merge**.
-
-\* _pastikan kamu tidak merubah apapun pada forked repo, supaya melakukan merge secara otomatis, kalo tidak ya paling2 konflik._
-
-### Melalui terminal ⌨️
-
-Tambahkan remote alamat repository yang aslinya disini tak beri nama `upstream`., ganti `ORIGINAL_OWNER` dan `ORIGINAL_REPO` dengan alamat repo aslimu.
-
-```bash
-$ git add remote upstream git@github.com:ORIGINAL_OWNER/ORIGINAL_REPO.git
-$ git remote -v
-> origin    git@github.com:piharpi/www.git (fetch) # forked repo
-> origin    git@github.com:piharpi/www.git (push) # forked repo
-> upstream    git@github.com:ORIGINAL_OWNER/ORIGINAL_REPO.git (fetch) # upstream repo / original repo
-> upstream    git@github.com:ORIGINAL_OWNER/ORIGINAL_REPO.git (push) # upstream repo / original repo
-```
-
-Checkout ke local branch `master`.
-
-```bash
-$ git checkout master
-> Switched to branch 'master'
-```
-
-Jika sudah, Merge local repo dengan remote `upstream/master`.
-
-```bash
-$ git merge upstream/master
-```
-
-Terakhir push local repo ke remote `origin`.
-
-```bash
-$ git add -A
-$ git commit -m "updating origin repo" && git push -u origin master
-```
-
-Selamat mencoba cara ribet ini, semoga bisa dipahami, saya sendiri lebih senang melalui terminal, klo ada yang ribet kenapa cari yang mudah.
-
-##### Resources
-
-- [Syncing a fork](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork)
-- [Update your fork directly on Github](https://rick.cogley.info/post/update-your-forked-repository-directly-on-github/#top)
+而如今进入研究生，我想，我现在更为迫切的想去了解高层次的领域，去了解更为深刻的漏洞，去学习更为前沿的技术和文章。慢慢来，一切皆有可能。
