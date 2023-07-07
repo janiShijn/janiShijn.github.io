@@ -1,34 +1,14 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
-date:   2020-08-29 09:29:20 +0700
-categories: jekyll update
+date:   2023-07-07 09:29:20 +0700
+categories: jani update
 usemathjax: true
 ---
 
 
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+最初进入安全领域仅仅是因为高考志愿把我录取到了信息安全专业，当时对这个专业毫无了解，同样，也毫无兴趣可言。在经历了高中三年的高压的生活后，我进入了极度躺平的状态，所有课程都是仅过及格线，当时的人生规划是，及时行乐，随缘就好。
 
+回头来看，我到底是什么时候对信安产生了兴趣，并决心想在这个行业发展下去，我想，大概是因为我们讲信息安全数学基础的董老师在课堂上用两节课的时间不停的写数学证明的时候，也大概是因为我们线性代数蔡老师在大夏天挥汗如雨仍然写满黑板的板书的时候，也大概是阴差阳错进入了网安方班预备班看到师兄师姐拿奖拿到手软的时候，但究其根本的原因，也仅仅是因为我深处迷茫时，被我舍友一起拉着参加全国密码技术竞赛，由于不想拖她们的后腿，只能竭尽全力敲代码，研究算法，最终结果还很不错，获得了我人生中第一个全国性的奖项，从此，我便进入了热爱信安的状态，开始学习web安全，学习sql注入，xss攻击等等，拿下了第一个信息泄露edusrc,又拿下了第一个cvnd的sql高危注入。
 
-Jekyll requires blog post files to be named according to the following format:
-
-`YEAR-MONTH-DAY-title.MARKUP`
-
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
-
+而如今进入研究生，我想，我现在更为迫切的想去了解高层次的领域，去了解更为深刻的漏洞，去学习更为前沿的技术和文章。慢慢来，一切皆有可能。
