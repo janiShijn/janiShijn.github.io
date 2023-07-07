@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Reading So you want to work in security
+title: "Reading So you want to work in security"
 date: 2023-07-07 16:04 +0700
 modified: 2023-07-07 18:10 +0700
 description: 对于http://ifsec.blogspot.com/2018/02/so-you-want-to-work-in-security-and-for.html的读后感
