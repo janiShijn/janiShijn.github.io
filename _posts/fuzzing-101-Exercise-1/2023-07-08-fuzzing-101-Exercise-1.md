@@ -71,8 +71,7 @@ $HOME/fuzzing_xpdf/install/bin/pdfinfo -box -meta $HOME/fuzzing_xpdf/pdf_example
 
 安装成功
 
-https://img1.imgtp.com/2023/07/08/gsT5zyP6.png
-
+![img](https://img1.imgtp.com/2023/07/08/gsT5zyP6.png)
 #### 2.安装afl++
 
 #### 3.fuzz(1)
@@ -112,11 +111,11 @@ afl-fuzz -i $HOME/fuzzing_xpdf/pdf_examples/ -o $HOME/fuzzing_xpdf/out/ -s 123 -
 
 所以,基本上fuzzer为每个不同的输入文件将运行该命令`$HOME/fuzzing_xpdf/install/bin/pdftotext <input-file-name> $HOME/fuzzing_xpdf/output`
 
-https://img1.imgtp.com/2023/07/08/kng4A0kY.png
+![img](https://img1.imgtp.com/2023/07/08/kng4A0kY.png)
 
 成功
 
-https://img1.imgtp.com/2023/07/08/6oBdCt5W.png
+![img](https://img1.imgtp.com/2023/07/08/6oBdCt5W.png)
 
 > 附：界面信息介绍
 >
@@ -217,15 +216,15 @@ https://img1.imgtp.com/2023/07/08/6oBdCt5W.png
 
 #### 4.重现崩溃
 
-https://img1.imgtp.com/2023/07/08/yHWCX5NZ.png
+![img](https://img1.imgtp.com/2023/07/08/yHWCX5NZ.png)
 
 ```
 $HOME/fuzzing_xpdf/install/bin/pdftotext 'id:000000,sig:11,src:000902,time:370856,execs:210977,op:havoc,rep:16' $HOME/fuzzing_xpdf/output
 ```
 
-https://img1.imgtp.com/2023/07/08/J5BRHDrW.png
+![img](https://img1.imgtp.com/2023/07/08/J5BRHDrW.png)
 
-https://img1.imgtp.com/2023/07/08/sIjJHT0M.png
+![img](https://img1.imgtp.com/2023/07/08/sIjJHT0M.png)
 
 #### 5.调试崩溃
 
@@ -246,13 +245,13 @@ make install
 gdb --args $HOME/fuzzing_xpdf/install/bin/pdftotext $HOME/fuzzing_xpdf/out/default/crashes/22 $HOME/fuzzing_xpdf/output
 ```
 
-https://img1.imgtp.com/2023/07/08/SbgBlO4d.png
+![img](https://img1.imgtp.com/2023/07/08/SbgBlO4d.png)
 
-https://img1.imgtp.com/2023/07/08/yjYZjpK3.png
+![img](https://img1.imgtp.com/2023/07/08/yjYZjpK3.png)
 
 用bt查看调用栈
 
-https://img1.imgtp.com/2023/07/08/fnf75QqT.png
+![img](https://img1.imgtp.com/2023/07/08/fnf75QqT.png)
 
 可以观察到多次在最后调用了`Parser::getObj`，似乎进入了一个无限递归。
 
@@ -285,4 +284,4 @@ https://img1.imgtp.com/2023/07/08/fnf75QqT.png
 
 解决方案：添加AFL_I_DONT_CARE_ABOUT_MISSING_CRASHES=1
 
-https://img1.imgtp.com/2023/07/08/3w4Bw34r.png
+![img](https://img1.imgtp.com/2023/07/08/3w4Bw34r.png)
