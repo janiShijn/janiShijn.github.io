@@ -72,7 +72,7 @@ make install
 $HOME/fuzzing_libexif/install/bin/exif
 ```
 
-![image-20230709172926891](image-20230709172926891.png)
+![image](https://img1.imgtp.com/2023/07/25/lvzzg0qL.png)
 
 #### 2.示例安装
 
@@ -90,7 +90,7 @@ $HOME/fuzzing_libexif/install/bin/exif $HOME/fuzzing_libexif/exif-samples-master
 
 输出：
 
-![image-20230709180024025](image-20230709180024025.png)
+![image](https://img1.imgtp.com/2023/07/25/bdNgTm2X.png)
 
 #### 3.用afl-clang-lto作为编译器来构建libexif
 
@@ -159,9 +159,9 @@ afl-fuzz -i $HOME/fuzzing_libexif/exif-samples-master/jpg/ -o $HOME/fuzzing_libe
 AFL_I_DONT_CARE_ABOUT_MISSING_CRASHES=1 afl-fuzz -i $HOME/fuzzing_libexif/exif-samples-master/jpg/ -o $HOME/fuzzing_libexif/out/ -s 123 -- $HOME/fuzzing_libexif/install/bin/exif @@
 ```
 
-![image-20230709180811374](image-20230709180811374.png)
+![image](https://img1.imgtp.com/2023/07/25/uQSxZ1ay.png)
 
-![image-20230725014652017](image-20230725014652017.png)
+![image](https://img1.imgtp.com/2023/07/25/vVQ87a1x.png)
 
 #### 5.动态调试
 
