@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "fuzzing 101 Exercise 2"
+title: "fuzzing 101 Exercise 3"
 date: 2023-07-26 19:06 +0700
 modified: 2023-07-26 19:17 +0700
 description: fuzzing101 Exercise 3的练习
